@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan');
+
+#screen {
+  margin: auto;
+}
+#tittle {
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 4em;
+  text-align: center;
+}
+select {
+  border-radius: 5px;
+  margin: 5% 0%;
+  font-size: 1.2em;
+  max-width: 100%;
+}
+button {
+  border-radius: 5px;
+  color: #000;
+  font-size: 1.2em;
+  margin: 5% 0%;
+}
+#welcome {
+  display: block;
+  margin-top: 5%;  
+}
+
+#result {
+  display: none;
+}
+
+#final {
+  margin-top: 5%;
+  display: none;
+  border-radius: 50px;
+  background-color: rgba(255,255,255,.1);
+  padding: 5%;
+}
+#board, #lastboard {
+  display: none;
+  margin: 0 auto;
+  padding: 1%;
+}
+.piece {
+  min-width: 100%;
+  min-height: 75px;
+  text-align: center;
+  padding: 2%;
+  font-size: 1.2em;
+  margin: 2% 0%;
+  border-bottom: 2px solid;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.ans:hover {
+  background-color: green;
+  color: #fff;
+}
+.topper {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+

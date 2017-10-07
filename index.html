@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Online test (copy)</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container">
+  <div id="screen">
+    <div id="tittle">Test</div>
+    <div id="welcome">
+      <h3>Pick a category and number of questions.</h3>
+      <div id="categories"></div>
+      <button id="start" onClick="click">Start</button>
+      <select id="amount">
+        <option value="3">3</option>
+        <option value="20">20</option>
+        <option value="10">10</option>
+      </select>
+    </div>
+    <div id="result">
+      <h3 id="message"></h3>
+      <p id="asked"></p>
+      <p id="correct"></p>
+      <p id="chosen"></p>
+      <p id="points"></p>
+      <button id="next" onClick="click">Next</button>
+      <button id="exit" onClick="click">Exit</button>
+    </div>
+    <div id="final">
+      <h3 id="finalmessage"></h3>
+      <form action="https://formspree.io/nat@natrivera.com" method="POST" align="center" name="contactme">
+        <input type="hidden" name="_subject" value="Quiz Results!" />
+        <input type="hidden" name="_format" value="plain" />
+        <input class="form-control input-lg" name="name" type="text" value="" placeholder="Name: Poly Student" />
+        <br>
+        <input class="form-control input-lg" name="email" type="text" value="" placeholder="Email: student@cpp.edu" />
+        <br>
+        <input class="form-control input-lg" name="bronco_id" type="text" value="" placeholder="Bronco ID: 0123456789" />
+        <br>
+        <textarea class="form-control input-lg" name="message" id="optmess" rows="5" placeholder="Optional: message"></textarea>
+        <br>
+        <textarea class="form-control input-lg" name="results" id="resultmessage" rows="5" placeholder="Message: Hello World"></textarea>
+        <br>
+        <input class="form-control input-lg" type="submit" name="submit" id="submit" value="Send to LRC" />
+      </form>
+    </div>
+    <div id="board">
+      <div id="marker" class="topper"></div>
+      <div class="piece" id="question">Question</div>
+      <div class="row">
+        <div class="col-3">
+          <div class="piece ans" id="ans1" onClick="click">Answer 1</div>
+        </div>
+        <div class="col-3">
+          <div class="piece ans" id="ans2" onClick="click">Answer 2</div>
+        </div>
+        <div class="col-3">
+          <div class="piece ans" id="ans3" onClick="click">Answer 3</div>
+        </div>
+        <div class="col-3">
+          <div class="piece ans" id="ans4" onClick="click">Answer 4</div>
+        </div>
+      </div>
+    </div>
+    <div id="lastboard">
+      <div id="lmarker" class="topper"></div>
+      <div class="piece" id="questionl">Question</div>
+      <div class="row">
+        <div class="col-3">
+          <div class="piece ans" id="ans1l" onClick="click">Answer 1</div>
+        </div>
+        <div class="col-3">
+          <div class="piece ans" id="ans2l" onClick="click">Answer 2</div>
+        </div>
+        <div class="col-3">
+          <div class="piece ans" id="ans3l" onClick="click">Answer 3</div>
+        </div>
+        <div class="col-3">
+          <div class="piece ans" id="ans4l" onClick="click">Answer 4</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://codepen.io/natrivera/pen/aLyovm.js'></script>
+<script src='https://codepen.io/natrivera/pen/oGERqv.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
